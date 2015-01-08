@@ -1,12 +1,4 @@
-// string.replace([old],[new])
 
-// var awesomeThoughts = "I am Shevy and I am AWESOME";
-
-// var funthoughts = awesomeThoughts.replace("AWESOME", "FUN");
-
-// $("#main").append(funthoughts);
-
-// var skills = ["Python", "Javascript", "HTML", "CSS3", "InDesign", "Photoshop"];
 
 var bio = {
     "name":"Shevaun Frazier",
@@ -24,7 +16,7 @@ var bio = {
     };
     
 var work = {
-    "jobs" = [
+    "jobs": [
         {
         "employer": "Amazon Web Services",
         "title": "Techical CS Lead",
@@ -51,36 +43,65 @@ var work = {
 
 
 var education = {
-    "schools": 
-    [
+    "schools": [
         {
-        "name": "University of Edinburgh",
-        "city": "Edinburgh",
-        "major": "Biological Sciences",
-        "gradYear": "1997 - 2001",
-        "website": "www.ed.ac.uk"
+            "name": "University of Edinburgh",
+            "city": "Edinburgh",
+            "major": "Biological Sciences",
+            "gradYear": "1997 - 2001",
+            "website": "www.ed.ac.uk"
         },
         {
-        "name": "Coursera",
-        "city": "Online"
-        "major": "Interactive Python",
-        "gradYear": "2012",
-        "website": "www.coursera.com"
+            "name": "Coursera",
+            "city": "Online",
+            "major": "Interactive Python",
+            "gradYear": "2012",
+            "website": "www.coursera.com"
         }
     ],
-    "onlineCourses": {
-        "title": "An Introduction to Interactive Programming in Python",
-        "school": "Coursera",
-        "dates": "2012",
-        "url": "https://www.coursera.org/course/interactivepython"
+    "onlineCourses": [
+        {
+            "title": "An Introduction to Interactive Programming in Python",
+            "school": "Coursera",
+            "dates": "2012",
+            "url": "https://www.coursera.org/course/interactivepython"
         },
         {
-        "title": "HTML5/CSS",
-        "school": "Udacity",
-        "dates": "December 2014",
-        "url": "https://www.udacity.com/course/ud304-nd"
-        },
+            "title": "HTML5/CSS",
+            "school": "Udacity",
+            "dates": "December 2014",
+            "url": "https://www.udacity.com/course/ud304-nd"
+        }
+    ]
 };
+
+var projects = {
+    "project": [
+    {
+        "title": "pixiespace.com",
+        "dates": 2011,
+        "description": "Every The Cloud has a sparklepixue lining",
+        "images": ["images/pixispacesplash.png"]
+    },
+    {
+        "title": "Queue Dashboard",
+        "dates": "March 2014",
+        "description": "Live tracking of agent availability for task queues, drawing json data from an existing tool.",
+        "images": ["images/queuedashboard.png"]
+    }
+    ]
+};
+
+
+// string.replace([old],[new])
+
+// var awesomeThoughts = "I am Shevy and I am AWESOME";
+
+// var funthoughts = awesomeThoughts.replace("AWESOME", "FUN");
+
+// $("#main").append(funthoughts);
+
+// var skills = ["Python", "Javascript", "HTML", "CSS3", "InDesign", "Photoshop"];
 
 /* var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
