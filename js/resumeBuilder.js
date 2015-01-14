@@ -2,14 +2,14 @@
 var bio = {
     "name":"Shevaun Frazier",
     "role" : "Front-end Ninja",
-    "contacts" :  { 
+    "contacts" : { 
         "email":"shevaunfrazier@googlemail.com",
         "github": "shevyf",
         "mobile": "0879786425",
         "twitter": "@shevyf",
         "location": "Dublin"
         },
-    "image" : "images/fry.jpg",
+    "image" : "images/shevaun.jpg",
     "welcome" : "Shevaun is a determined and skilled learner who rises to a challenge and enjoys problem solving.",
     "skills" : ["Python", "Javascript", "HTML", "CSS3", "InDesign", "Photoshop"],
     "display": function() {
@@ -22,15 +22,21 @@ var bio = {
         var formattedLocation = HTMLlocation.replace("%data%",bio.contacts.location);
         var formattedMsg = HTMLWelcomeMsg.replace("%data%",bio.welcome);
         var formattedImg = HTMLbioPic.replace("%data%",bio.image);
-        // var formattedSkills = HTMLskills.replace("%data%",bio.skills);
 
         $("#header").prepend(formattedRole);
         $("#header").prepend(formattedName);
+        
         $("#footerContacts").append(formattedLocation);
         $("#footerContacts").append(formattedMobile);
         $("#footerContacts").append(formattedEmail);
         $("#footerContacts").append(formattedTwitter);
         $("#footerContacts").append(formattedGithub);
+        
+        $("#topContacts").append(formattedLocation);
+        $("#topContacts").append(formattedMobile);
+        $("#topContacts").append(formattedEmail);
+        $("#topContacts").append(formattedTwitter);
+        $("#topContacts").append(formattedGithub);
 
         $("#header").append(formattedMsg);
         $("#header").append(formattedImg);
@@ -39,10 +45,11 @@ var bio = {
             for (var skill in bio.skills) {
                 var formattedSkill = HTMLskills.replace('%data%', bio.skills[skill]);
                 $('#skills').append(formattedSkill);
+                
             }
         };
     }
-    };
+};
     
 var work = {
     "jobs": [
@@ -89,7 +96,7 @@ var education = {
     "schools": [
         {
             "name": "University of Edinburgh",
-            "degree": "B.Sc",
+            "degree": "B.Sc.",
             "location": "Edinburgh, UK",
             "major": "Biological Sciences",
             "gradYear": "1997 - 2001",
@@ -104,10 +111,22 @@ var education = {
             "url": "https://www.coursera.org/course/interactivepython"
         },
         {
-            "title": "HTML5/CSS",
+            "title": "Intro to HTML and CSS",
             "school": "Udacity",
             "dates": "December 2014",
-            "url": "https://www.udacity.com/course/ud304-nd"
+            "url": "https://www.udacity.com/course/ud304"
+        },
+        {
+            "title": "JavaScript Basics",
+            "school": "Udacity",
+            "dates": "January 2015",
+            "url": "https://www.udacity.com/course/ud804"
+        },
+        {
+            "title": "Intro to jQuery",
+            "school": "Udacity",
+            "dates": "January 2015",
+            "url": "https://www.udacity.com/course/ud245"
         }
     ],
     "display": function() {
@@ -148,8 +167,14 @@ var projects = {
     {
         "title": "Queue Dashboard",
         "dates": "March 2014",
-        "description": "Live tracking of agent availability for task queues, drawing json data from an existing tool.",
-        "images": []
+        "description": "Live tracking of agent availability for task queues, drawing json data from an existing tool. Django back-end.",
+        "images": ["images/queuedashboard.png","images/queuedashboardagent.png"]
+    },
+    {
+        "title": "WFH Overtime Submission form",
+        "dates": "2011",
+        "description": "Web form to submit time spent and cases worked while working from home. Django back-end produced a formatted email response.",
+        "images": ["images/wfhsubmission.png"]
     }
     ],
     "display": function() {
