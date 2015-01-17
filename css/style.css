@@ -1,7 +1,7 @@
 * {
   padding:0;
   margin:0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 
 .clearfix {
@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #138FAD;
   line-height: 48px;
   display: inline;
 }
@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #4B4F9E;
   line-height: 29px;
   padding: 10px;
 }
@@ -63,13 +63,12 @@ h2, h3, h4, h5 {
   color: #999999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
   font-size: 14px;
   color: #333333;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 a {
@@ -87,7 +86,7 @@ a {
 }
 
 #skillsH3 {
-  color: #F5AE23;
+  color: #138FAD;
   display: none;
 }
 
@@ -114,9 +113,23 @@ a {
   background-color: #4A4A4A;
 }
 
+.mid-blue {
+  background-color: #138FAD;
+}
+
+.blue-text {
+  color: #138FAD;
+}
+
+.darkblue-text {
+  color: #4B4F9E;
+}
+
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+  background-image: url(images/header-bg2.jpg);
+  background-size: 100% 100%;
 }
 
 .flex-box {
@@ -150,6 +163,14 @@ img {
   padding: 10px;
   max-width: 500px;
   vertical-align: top;
+}
+
+.project-pic {
+  box-shadow: 3px 3px 10px #888888;
+}
+
+.role-title {
+    margin-top: 15px;
 }
 
 /* Bar chart stuff */
