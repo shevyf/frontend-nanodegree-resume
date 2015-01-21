@@ -1,3 +1,22 @@
+# Shevyf's Online Resume Project
+
+Completed as part of the Front-end Developer Nanodegree from Udacity. The original repo contained the basic framework including an empty resumeBuilder.js file to add my own data and functions to.
+
+## Changes
+
+This resume has several changes from the original format.
+
+* Background image for the header, which is stretched to fill the whole div. 
+* Some colour scheme differences.
+* 'Skills at a glance' header now stays in place when screen is below 750px wide. I like it that way.
+* Jobs in the work object now have a number of roles which are iterated through. This allows more than one role per employer, which fitted my own employment history better.
+* urls for online classes now link to those pages, using /%data%/g regex to match more than one instance of %data% in the HTML template.
+
+Some data fields have been added in a different order to allow UK degree structure to make some sense.
+
+Sadly, I've got too much stuff on right now to go into adding more interactive elements, but I would have, if possible, converted the whole page to use Bootstrap and added modals to give more info on the projects.
+
+
 # The Resume Project
 
 ## How do I complete this project?

@@ -87,7 +87,7 @@ a {
 
 #skillsH3 {
   color: #138FAD;
-  display: none;
+  /* display: none; */
 }
 
 .orange {
@@ -163,6 +163,7 @@ img {
   padding: 10px;
   max-width: 500px;
   vertical-align: top;
+  margin-top: 10px;
 }
 
 .project-pic {
